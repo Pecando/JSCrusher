@@ -365,7 +365,7 @@ public class JSCrusher {
 			int count =name.length();
 			for(int i=0;i<count;i++){
 				Double flag=Math.random();
-				if(flag<0.0){
+				if(flag<0.2){
 					newName+="\\u"+Integer.toHexString(name.codePointAt(i)+0xf0000).substring(1);								
 				}else{
 					newName+=name.charAt(i);
